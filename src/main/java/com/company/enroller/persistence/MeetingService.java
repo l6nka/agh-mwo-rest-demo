@@ -14,7 +14,7 @@ public class MeetingService {
 	DatabaseConnector connector;
 
 	public MeetingService() {
-		connector = DatabaseConnector.getInstance();
+		//connector = DatabaseConnector.getInstance();
 	}
 
 	public Collection<Meeting> getAll() {
