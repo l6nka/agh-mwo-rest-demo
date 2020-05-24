@@ -32,8 +32,7 @@ public class ParticipantRestController {
 	    Participant participant = participantService.findByLogin(login);
 	    if (participant == null) { 
 	    	return new ResponseEntity(HttpStatus.NOT_FOUND);
-	    } 
-
+	    }
 		return new ResponseEntity<Participant>(participant, HttpStatus.OK); 
 	}
 	
@@ -56,8 +55,4 @@ public class ParticipantRestController {
 	    participantService.delete(participant);
 		return new ResponseEntity<Participant>(HttpStatus.NO_CONTENT); 
 	}
-
-	 
-
-
 }

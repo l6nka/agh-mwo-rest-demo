@@ -77,7 +77,7 @@ public class Meeting {
 	}
 
 	public void removeParticipant(Participant participant) {
-		this.participants.remove(participant);
+		participants.removeIf(assignedParticipant -> assignedParticipant.getLogin().equals(participant.getLogin()));
 	}
 
 	public Collection<Participant> getParticipants() {

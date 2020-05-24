@@ -10,7 +10,6 @@ import com.company.enroller.model.Participant;
 public class ParticipantService {
 
 	DatabaseConnector connector;
-	//Session session = connector.getSession();
 
 	public ParticipantService() {
 		connector = DatabaseConnector.getInstance();
